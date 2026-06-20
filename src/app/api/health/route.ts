@@ -1,3 +1,7 @@
-export function GET() {
-  return Response.json({ ok: true, service: "market-clock" });
+﻿export async function GET() {
+  return Response.json({
+    ok: true,
+    service: "aphrodite",
+    timestamp: new Date().toISOString(),
+  });
 }
