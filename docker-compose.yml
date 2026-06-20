@@ -1,11 +1,11 @@
-﻿services:
+services:
   aphrodite:
     image: ghcr.io/kaizem1337/aphrodite:latest
     pull_policy: always
     container_name: aphrodite
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3417:3000"
     environment:
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: "1"
